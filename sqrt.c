@@ -33,12 +33,12 @@ int is_valid_int(const char *str)
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("“NEGSUPPORT: Usage: sqrt input\n\n");
+		printf("Usage: sqrt input\n\n");
 		exit(-1);
 	}
 	if(!is_valid_int(argv[1]))
 	{
-		printf("“NEGSUPPORT: Usage: Input should be a valid number\n\n");
+		printf("Usage: Input should be a valid number\n\n");
 		exit(-1);
 	}
 
@@ -46,11 +46,11 @@ int main(int argc, char* argv[]) {
 	if(argv[1][0]=='-')
 	{
 		input=-input;
-		printf("“NEGSUPPORT: Sqrt of %d is %fi\n",input,sqrt(input));
+		printf("Sqrt of %d is %fi\n",input,sqrt(input));
 	}
 	else
-		printf("“NEGSUPPORT: Sqrt of %d = %f\n",input,sqrt(input));
-	printf("“NEGSUPPORT: End of program. Exiting.");
+		printf("Sqrt of %d = %f\n",input,sqrt(input));
+	printf("End of program. Exiting.");
 	return(0);
 
 } // end main
